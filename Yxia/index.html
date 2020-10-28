@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BM-Art Yxia</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap" rel="stylesheet">
+    </head>
+    <div> 
+        <h1>Yxia</h1>
+    </div>
+    <body>
+        <h2>Created by Brianna Mercado</h2>
+        <div>
+            <h3>
+                <p>
+                  Created in my concept art course at Umass Dartmouth. I decided on a mage character
+                  who wanted to become stronger. After a freak accident she gained the power she desired,
+                  but caused her physical form to warp and change into a more animalistic one.
+                  This change also pushed her ideals and desires to an extreme, craving more power by any means necessary.
+                  Creating this character I didn't know what to expect or what I wanted, I know I wanted a fantasy design but not what 
+                  I wanted out of it. Creating this character I looked back to a lot of my personal character concepts in rpg games and 
+                  creating a character that embodies their energies of being of quote "murder hobo" quality was something that was really fun
+                  to create.
+
+
+                </p>
+                <a href="https://www.artstation.com/artwork/8e1Bzn" target="blank">Artstation Post</a>
+            </h3>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="/Assets/Yxia/character_poses_and_faces_by_satyress_ofthe_nine_dd709kt-fullview.png" width="800px">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/Final_concept.jpg" width="800px">
+            </div>
+            
+            <div class="mySlides fade">
+             <img src="/Final_concept_Large.jpg" width="800px">
+            </div>
+            <div class="mySlides fade">
+              <img src="/Assets/Yxia/Final Concept turn around.png" width="800px">
+             </div>
+             <div class="mySlides fade">
+              <img src="brianna-mercado-yxiaremastered.jpg" width="800px">
+             </div>
+ 
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+        
+        <script src="script.js" async defer></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </body>
+</html>
+        

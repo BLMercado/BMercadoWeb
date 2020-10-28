@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BM-Art Capra</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="slider.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap" rel="stylesheet">
+    </head>
+    <div> 
+        <h1>Capra</h1>
+    </div>
+    <body>
+        <h2>Created by Brianna Mercado</h2>
+        <div>
+            <h3>
+                <p>The final product of my character creation course at Umass Dartmouth. I decided to work on a fish 
+                  like character. The end product is a deep sea monster that stuns its prey with its horns and eats them whole
+                  with its snake like jaw. Creating this creature was something in yet out of my comfort zone. It was my first
+                  time taking a model from start to finish but I've been creating strange creatures from as long as I can remember.
+                  The whole experience was eye opening to what I want to do in life and what I am good at. Hopefully I can do more 
+                  like this in the future. 
+                </p>
+                <li><a href="https://www.artstation.com/artwork/L2qmNP" target="blank"> Artstation</a></li>
+            </h3>
+            <h3></h3>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="/Capra2.0.png" width="500px">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/Portfolio_Capra/Capra.PNG" width="500px">
+            </div>
+            
+            <div class="mySlides fade">
+             <img src="/Portfolio_Capra/Capra_Maya.PNG" width="500px" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/Portfolio_Capra/Capra_Maya_render.png" width="500px" >
+               </div>
+            
+               <div class="mySlides fade">
+                <img src="/Portfolio_Capra/Briannas_character_sheet_tabloid_template_v01.png" width="500px" >
+               </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+        
+        <script src="script.js" async defer></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </body>
+</html>
+        

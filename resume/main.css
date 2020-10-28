@@ -1,0 +1,170 @@
+*{
+    /* outline: 2px dashed green; */
+    
+    margin: 0;
+    padding:0;
+    font-family: 'Raleway';
+}
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "q"
+        "h"
+        "e"
+        "b"
+        "f";
+} 
+/* step one - build your grid */
+.container {
+    background-image: url('Background-design.png');
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -65px;
+    background-color: blanchedalmond;
+    /* height: 100%; */
+    display: grid;
+    grid-gap: 30px;
+    /* this will be  the same for everyone */
+    grid-template-columns: repeat(12, 1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "s s x x x x x x x x x x"
+        "s s e e e e e e e e e e"
+        "s s e e e e e e e e e e"
+        ;
+        
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Raleway';
+    padding: 10px;  
+}
+li{
+    font-family: 'Raleway';
+    font-size: .8em;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.date{
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+body{
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+h1{
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(11, 102, 7);
+}
+
+h2{
+    color: rgb(21, 78, 3);
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+h3{
+    font-size: 1em;
+    color: rgb(21, 78, 3);
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h4{
+    font-size: .8em;
+    color: rgb(21, 78, 3);
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+p{
+    font-family: 'Raleway';
+    margin-left: -30px;
+}
+
+a:link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:visited{
+    color:  black;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(226, 26, 193);
+    text-decoration: none;
+}
+a:active{
+    color: black;
+    text-decoration: none;
+}
+
+/* .mobile{
+    visibility:hidden;
+} */
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+@media screen and (max-width: 800px){
+
+    .container{
+        display: grid;
+        grid-gap: inherit;
+        /* grid is only one column, keep this way */
+        grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h"
+        "s"
+        "x"
+        "e";
+    }
+    }
+/* step 1 - assign each of your sections a letter */
+
+header{
+    grid-area: h;
+    margin-left: 20px;
+}
+
+.skills{
+    grid-area: s;
+    margin-left: 10px;
+    background-color: #00d624a2;  
+    border-radius: 20px;
+    border-spacing: -20px;
+  }
+.experience{
+    grid-area: x;
+    margin-left: 20px;
+}
+
+.education{
+    grid-area: e;
+    margin-left: 20px;
+    margin-top: -0px;
+}

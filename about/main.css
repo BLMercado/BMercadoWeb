@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: blanchedalmond;
+    font-family: 'Raleway', sans-serif;
+}
+
+.portrait{
+  margin-left: 25px;
+}
+
+.content{
+  padding-left: 750px;
+  margin-top: -600px;
+  padding-right: 300px;
+  border-style: groove;
+}
+
+.school{
+  padding-top: 10px;
+}
+
+.life{
+  padding-top: 10px;
+}
+@media screen and (max-width: 600px){
+  .portrait{
+    margin-left: 25px;
+  }
+
+  .content{
+    padding-left: 25px;
+    margin-top: 10px;
+    padding-right: 0px;
+  }
+}
